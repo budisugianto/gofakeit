@@ -5,7 +5,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/brianvoe/gofakeit/v4/data"
+	"github.com/budisugianto/gofakeit/v4/data"
 )
 
 func TestRandIntRange(t *testing.T) {

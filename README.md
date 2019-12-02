@@ -1,19 +1,19 @@
 ![alt text](https://raw.githubusercontent.com/brianvoe/gofakeit/master/logo.png)
 
-# gofakeit [![Go Report Card](https://goreportcard.com/badge/github.com/brianvoe/gofakeit)](https://goreportcard.com/report/github.com/brianvoe/gofakeit) [![Build Status](https://travis-ci.org/brianvoe/gofakeit.svg?branch=master)](https://travis-ci.org/brianvoe/gofakeit) [![codecov.io](https://codecov.io/github/brianvoe/gofakeit/branch/master/graph/badge.svg)](https://codecov.io/github/brianvoe/gofakeit) [![GoDoc](https://godoc.org/github.com/brianvoe/gofakeit?status.svg)](https://godoc.org/github.com/brianvoe/gofakeit) [![license](http://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/brianvoe/gofakeit/master/LICENSE.txt)
+# gofakeit [![Go Report Card](https://goreportcard.com/badge/github.com/budisugianto/gofakeit)](https://goreportcard.com/report/github.com/budisugianto/gofakeit) [![Build Status](https://travis-ci.org/brianvoe/gofakeit.svg?branch=master)](https://travis-ci.org/brianvoe/gofakeit) [![codecov.io](https://codecov.io/github/brianvoe/gofakeit/branch/master/graph/badge.svg)](https://codecov.io/github/brianvoe/gofakeit) [![GoDoc](https://godoc.org/github.com/budisugianto/gofakeit?status.svg)](https://godoc.org/github.com/budisugianto/gofakeit) [![license](http://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/brianvoe/gofakeit/master/LICENSE.txt)
 Random data generator written in go
 
 <a href="https://www.buymeacoffee.com/brianvoe" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
 ### Features
 - Every function has an example and a benchmark,
-[see benchmarks](https://github.com/brianvoe/gofakeit/blob/master/BENCHMARKS.md)
+[see benchmarks](https://github.com/budisugianto/gofakeit/blob/master/BENCHMARKS.md)
 - Zero dependencies
 - Randomizes user defined structs
 - Numerous functions for regular use
 
 ### 120+ Functions!!!
-If there is something that is generic enough missing from this package [add an issue](https://github.com/brianvoe/gofakeit/issues) and let me know what you need.
+If there is something that is generic enough missing from this package [add an issue](https://github.com/budisugianto/gofakeit/issues) and let me know what you need.
 Most of the time i'll add it!
 
 ### Seed
@@ -24,7 +24,7 @@ gofakeit.Seed(time.Now().UnixNano()) // or gofakeit.Seed(0)
 
 ## Example
 ```go
-import "github.com/brianvoe/gofakeit"
+import "github.com/budisugianto/gofakeit"
 
 gofakeit.Seed(0)
 
@@ -45,7 +45,7 @@ gofakeit.CurrencyShort() // USD
 
 ## Example Struct
 ```go
-import "github.com/brianvoe/gofakeit"
+import "github.com/budisugianto/gofakeit"
 
 // Create structs with random injected data
 type Foo struct {
