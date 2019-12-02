@@ -1,9 +1,9 @@
 package gofakeit
 
 import (
+	crand "crypto/rand"
 	"math"
-	//"math/rand"
-	"crypto/rand"
+	"math/rand"
 )
 
 // Number will generate a random number between given min And max
@@ -87,7 +87,7 @@ func ShuffleInts(a []int) {
 // GenerateRandomBytes will randomize a slice of ints
 func GenerateRandomBytes(n int) ([]byte, error) {
 	b := make([]byte, n)
-	_, err := rand.Read(b)
+	_, err := crand.Read(b)
 	// Note that err == nil only if we read len(b) bytes.
 	if err != nil {
 		return nil, err
