@@ -1,6 +1,7 @@
 package gofakeit
 
 import (
+	"encoding/base64"
 	"math/rand"
 )
 
@@ -45,4 +46,10 @@ func RandString(a []string) string {
 		return ""
 	}
 	return a[rand.Intn(size)]
+}
+
+// GenerateRandomString will take in a slice of string and return a randomly selected value
+func GenerateRandomString(s int) (string, error) {
+	b, err := GenerateRandomBytes(s)
+	return base64.URLEncoding.EncodeToString(b), err
 }

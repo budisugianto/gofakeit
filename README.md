@@ -263,6 +263,7 @@ Float32Range(min, max float32) float32
 Float64() float64
 Float64Range(min, max float64) float64
 ShuffleInts(a []int)
+GenerateRandomBytes(a int) ([]byte,error)
 ```
 
 ## String
@@ -272,4 +273,5 @@ Letter() string
 Lexify(str string) string
 RandString(a []string) string
 ShuffleStrings(a []string)
+GenerateRandomString(a) (string, error)
 ```
